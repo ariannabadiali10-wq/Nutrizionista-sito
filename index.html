@@ -3,126 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dott.ssa Arianna Badiali | Biologa Nutrizionista</title>
-    <meta name="description" content="Sito ufficiale della Dott.ssa Arianna Badiali, Biologa Nutrizionista. Percorsi alimentari personalizzati, educazione alimentare ed empatia.">
+    <title>Dott.ssa Arianna Badiali | Biologa Nutrizionista Jesi</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; }
-        .hero-gradient { background: radial-gradient(circle at top right, #ecfdf5 0%, #f8fafc 100%); }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        .hero-gradient { background: radial-gradient(circle at top right, #fff1f2 0%, #f8fafc 100%); }
+        .bg-crimson { background-color: #8b1a1a; } /* Rosso granata come il tuo logo */
+        .text-crimson { color: #8b1a1a; }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800">
 
-    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-sm">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <h1 class="text-xl font-extrabold text-emerald-700 tracking-tight uppercase">Dott.ssa <span class="font-light text-slate-600">Arianna Badiali</span></h1>
-            <div class="hidden md:flex space-x-8 items-center font-medium">
-                <a href="#servizi" class="hover:text-emerald-600 transition">Servizi</a>
-                <a href="#faq" class="hover:text-emerald-600 transition">Domande Frequenti</a>
-                <a href="https://wa.me/393331234567" class="bg-emerald-600 text-white px-6 py-2.5 rounded-full hover:bg-emerald-700 shadow-md transition transform hover:scale-105">Prenota Visita</a>
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-rose-100">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="logo.jpg" alt="Logo" class="h-12 w-auto">
+                <h1 class="text-xl font-extrabold text-slate-900 tracking-tight uppercase hidden md:block">Dott.ssa <span class="font-light text-crimson">Arianna Badiali</span></h1>
+            </div>
+            <div class="flex space-x-6 items-center font-medium text-sm">
+                <a href="#metodo" class="hover:text-crimson transition hidden sm:block">Metodo</a>
+                <a href="#prezzi" class="hover:text-crimson transition hidden sm:block">Prezzi</a>
+                <a href="https://wa.me/393495854951" class="bg-crimson text-white px-6 py-2.5 rounded-full hover:opacity-90 transition shadow-md">Prenota ora</a>
             </div>
         </div>
     </nav>
 
-    <header class="hero-gradient overflow-hidden">
-        <div class="container mx-auto px-6 py-16 md:py-24 flex flex-col md:flex-row items-center">
-            <div class="md:w-1/2 mb-12 md:mb-0">
-                <div class="inline-block px-4 py-1.5 mb-6 text-sm font-semibold tracking-wide text-emerald-700 uppercase bg-emerald-100 rounded-full">
-                    Nutrizione Scientifica ed Empatica
-                </div>
-                <h2 class="text-4xl md:text-6xl font-extrabold mt-4 leading-[1.1] text-slate-900">
-                    Ritrova il tuo equilibrio con la <span class="text-emerald-600">Dott.ssa Arianna Badiali</span>.
+    <header class="hero-gradient py-16 md:py-24">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-12">
+                <h2 class="text-4xl md:text-6xl font-extrabold text-slate-900 leading-tight">
+                    La salute inizia con un gesto <span class="text-crimson">d'amore</span> per se stessi.
                 </h2>
-                <p class="mt-8 text-xl text-slate-600 leading-relaxed max-w-lg">
-                    Dimentica le diete da fame. Costruiamo insieme un percorso che rispetti i tuoi gusti, la tua salute e il tuo stile di vita unico.
+                <p class="mt-6 text-xl text-slate-600 leading-relaxed">
+                    Niente proibizioni o schiavitù, ma consapevolezza e nutrizione sana. Ti aiuto a ritrovare il tuo benessere a <strong>Jesi</strong> e <strong>Online</strong>.
                 </p>
-                <div class="mt-10 flex flex-col sm:flex-row gap-4">
-                    <a href="https://wa.me/393331234567" class="bg-emerald-600 text-white text-center px-10 py-4 rounded-xl font-bold text-lg hover:bg-emerald-700 shadow-lg shadow-emerald-200 transition">Inizia il tuo percorso</a>
-                    <a href="#servizi" class="border border-slate-200 bg-white text-center px-10 py-4 rounded-xl font-bold text-lg hover:bg-slate-50 transition">Scopri il mio metodo</a>
+                <div class="mt-10">
+                    <a href="https://wa.me/393495854951" class="bg-crimson text-white px-8 py-4 rounded-xl font-bold shadow-lg inline-block">Inizia il tuo percorso</a>
                 </div>
             </div>
-            <div class="md:w-1/2 relative flex justify-center">
-                <div class="absolute inset-0 bg-emerald-200 blur-3xl opacity-30 rounded-full animate-pulse"></div>
-                <div class="relative w-80 h-80 md:w-[450px] md:h-[450px] bg-white rounded-3xl rotate-3 shadow-2xl overflow-hidden border-[12px] border-white text-center flex items-center justify-center">
-                    <img src="https://images.unsplash.com/photo-1559839734-2b71f1e3c7e5?auto=format&fit=crop&q=80&w=800" alt="Dott.ssa Arianna Badiali" class="object-cover h-full w-full -rotate-3 scale-110">
+            <div class="md:w-1/2 flex justify-center relative">
+                <div class="w-80 h-80 md:w-[420px] md:h-[420px] bg-white rounded-full shadow-2xl overflow-hidden border-[10px] border-white">
+                    <img src="arianna.jpg" alt="Dott.ssa Arianna Badiali" class="object-cover h-full w-full">
                 </div>
             </div>
         </div>
     </header>
 
-    <section id="servizi" class="py-24 bg-white">
-        <div class="container mx-auto px-6 text-center">
-            <h3 class="text-3xl md:text-4xl font-bold mb-16 italic">In cosa posso aiutarti</h3>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-                <div class="p-10 border rounded-3xl hover:shadow-2xl transition border-slate-100 bg-slate-50 text-left group">
-                    <div class="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
-                        <i data-lucide="apple"></i>
-                    </div>
-                    <h4 class="text-2xl font-bold mb-4">Piani Personalizzati</h4>
-                    <p class="text-slate-600 leading-relaxed">Analisi della composizione corporea e piani alimentari su misura per ogni esigenza metabolica.</p>
+    <section id="metodo" class="py-20 bg-white">
+        <div class="container mx-auto px-6 max-w-4xl text-center">
+            <h3 class="text-3xl font-bold mb-8 italic">Prendersi cura di sé, giorno dopo giorno</h3>
+            <p class="text-lg text-slate-600 leading-relaxed mb-6">
+                Laurea Magistrale in Scienze dell'Alimentazione (Perugia, 2020). Credo fortemente che alla base del benessere ci sia una sana alimentazione[cite: 3].
+            </p>
+            <blockquote class="bg-rose-50 p-8 rounded-2xl border-l-4 border-crimson italic text-slate-700 text-xl mb-10">
+                "Niente è proibito, basta consapevolezza[cite: 7]. Un corretto regime alimentare è un favore che fate a voi stessi per una vita sana e longeva[cite: 6]."
+            </blockquote>
+        </div>
+    </section>
+
+    <section id="servizi" class="py-20 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <h3 class="text-3xl font-bold text-center mb-12 italic">Servizi e Competenze</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-rose-50">
+                    <h4 class="font-bold text-xl mb-4 text-crimson">Cosa offro:</h4>
+                    <ul class="space-y-3 text-slate-700">
+                        <li>• Piani personalizzati (Diabete, Obesità, Intolleranze) [cite: 11]</li>
+                        <li>• Analisi Bioimpedenziometrica (BIA) [cite: 10]</li>
+                        <li>• Percorsi di Educazione Alimentare [cite: 12]</li>
+                        <li>• Valutazione antropometrica completa [cite: 10]</li>
+                    </ul>
                 </div>
-                <div class="p-10 border rounded-3xl hover:shadow-2xl transition border-slate-100 bg-slate-50 text-left group">
-                    <div class="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
-                        <i data-lucide="dumbbell"></i>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-rose-50">
+                    <h4 class="font-bold text-xl mb-4 text-crimson">Rivolto a:</h4>
+                    <div class="grid grid-cols-2 gap-2 text-slate-700">
+                        <span>• Sportivi [cite: 14]</span>
+                        <span>• Bambini [cite: 16]</span>
+                        <span>• Gravidanza [cite: 15]</span>
+                        <span>• Anziani [cite: 17]</span>
+                        <span>• Vegani/Veg [cite: 18]</span>
+                        <span>• Allattamento [cite: 15]</span>
                     </div>
-                    <h4 class="text-2xl font-bold mb-4">Nutrizione e Sport</h4>
-                    <p class="text-slate-600 leading-relaxed">Ottimizziamo la tua performance sportiva attraverso una gestione corretta dei nutrienti e dell'idratazione.</p>
-                </div>
-                <div class="p-10 border rounded-3xl hover:shadow-2xl transition border-slate-100 bg-slate-50 text-left group">
-                    <div class="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
-                        <i data-lucide="heart"></i>
-                    </div>
-                    <h4 class="text-2xl font-bold mb-4">Benessere Intestinale</h4>
-                    <p class="text-slate-600 leading-relaxed">Percorsi mirati per ridurre il gonfiore e migliorare la salute del tuo microbiota.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="faq" class="py-24 bg-slate-50">
-        <div class="container mx-auto px-6 max-w-4xl">
-            <h3 class="text-3xl font-bold text-center mb-16 italic">Dubbi frequenti</h3>
-            <div class="space-y-4">
-                <details class="group bg-white p-6 rounded-2xl border border-slate-200">
-                    <summary class="flex justify-between items-center font-bold text-lg cursor-pointer list-none">
-                        Come si svolge la prima visita con me?
-                        <span class="text-emerald-500 group-open:rotate-180 transition-transform">+</span>
-                    </summary>
-                    <p class="mt-4 text-slate-600">Dura circa 60 minuti. Analizzeremo la tua storia alimentare, i tuoi obiettivi e le tue abitudini per creare un piano sostenibile nel tempo.</p>
-                </details>
-                <details class="group bg-white p-6 rounded-2xl border border-slate-200">
-                    <summary class="flex justify-between items-center font-bold text-lg cursor-pointer list-none">
-                        Ricevo anche Online?
-                        <span class="text-emerald-500 group-open:rotate-180 transition-transform">+</span>
-                    </summary>
-                    <p class="mt-4 text-slate-600">Sì, svolgo consulenze online tramite videochiamata, garantendo la stessa attenzione e professionalità della visita in studio.</p>
-                </details>
+    <section id="prezzi" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h3 class="text-4xl font-black text-center mb-16 text-slate-900 tracking-tighter">LISTINO TRASPARENTE</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-200">
+                    <h4 class="text-xl font-bold mb-4">Prima Visita (1h) [cite: 19, 22]</h4>
+                    <p class="text-3xl font-black mb-4">€100 [cite: 23]</p>
+                    <p class="text-sm text-slate-500 mb-6 italic">Anamnesi, BIA e consegna piano entro 5gg[cite: 20, 21].</p>
+                </div>
+                <div class="bg-crimson p-8 rounded-3xl text-white shadow-2xl transform scale-105">
+                    <h4 class="text-xl font-bold mb-2 uppercase">Pacchetto Nutrizione [cite: 28]</h4>
+                    <p class="text-4xl font-black mb-4 italic">€270 [cite: 29]</p>
+                    <ul class="text-sm space-y-2 opacity-90 mb-6">
+                        <li>• Prima Visita + Piano [cite: 29]</li>
+                        <li>• 4 Controlli Mensili [cite: 29]</li>
+                        <li>• Soluzione Unica [cite: 29]</li>
+                    </ul>
+                    <p class="text-xs bg-white/20 p-2 rounded">Costo Prima Visita nel pacchetto: €80 [cite: 32]</p>
+                </div>
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-200">
+                    <h4 class="text-xl font-bold mb-4">Controlli Mensili [cite: 24]</h4>
+                    <p class="text-3xl font-black mb-4 italic">€50 [cite: 27]</p>
+                    <p class="text-sm text-slate-500 italic mb-4">Oppure Pacchetto 4 controlli a €150[cite: 30, 31].</p>
+                </div>
+            </div>
+            <div class="mt-12 max-w-3xl mx-auto text-center text-sm text-slate-500 bg-rose-50 p-6 rounded-xl border border-rose-100">
+                <p class="mb-2 uppercase font-bold text-crimson tracking-widest text-xs">Informazioni Utili</p>
+                Pagamento: Bancomat, Bonifico o Contanti[cite: 33]. <br>
+                Disdetta obbligatoria 24h prima[cite: 35]. Appuntamenti entro 3gg[cite: 34].
             </div>
         </div>
     </section>
 
-    <footer class="bg-slate-900 text-slate-400 py-16 px-6">
-        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 border-b border-slate-800 pb-10">
+    <footer class="bg-slate-900 text-white py-12 px-6">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
-                <h4 class="text-white text-xl font-bold mb-4 uppercase tracking-tighter">Dott.ssa Arianna Badiali</h4>
-                <p>Biologa Nutrizionista</p>
-                <p class="mt-2 text-sm italic">P.IVA 02864320425 - Ordine Nazionale Biologi Sez. A</p>
+                <img src="logo.jpg" alt="Logo" class="h-16 mb-6 brightness-0 invert">
+                <p class="text-rose-200 font-bold">Dott.ssa Arianna Badiali</p>
+                <p class="text-slate-400 text-sm">Biologa Nutrizionista | Albo n. 4019 | P.IVA 02864320425</p>
+                <p class="mt-4 text-slate-400 text-sm italic">Largo Salvador Allende 10/A, Jesi (AN)</p>
             </div>
             <div class="md:text-right">
-                <p class="text-white mb-2 font-bold">Contatti</p>
-                <p>Email: arianna.badiali.10@gmail.com</p>
-                <p>WhatsApp: +393495854951</p>
+                <p class="text-white font-bold mb-4 uppercase text-xs tracking-widest">Contatti & Orari</p>
+                <p class="text-slate-400 text-sm">Disponibilità: Venerdì 9:00 - 12:00 [cite: 36, 37]</p>
+                <p class="text-slate-400 text-sm mt-2">WhatsApp: 349 585 4951</p>
+                <p class="text-slate-400 text-sm">Email: arianna.badiali.10@gmail.com</p>
+                <div class="mt-6">
+                    <a href="https://wa.me/393495854951" class="bg-crimson px-6 py-2 rounded-full font-bold text-sm">Prenota ora</a>
+                </div>
             </div>
-        </div>
-        <div class="text-center pt-8 text-xs uppercase tracking-[0.2em]">
-            &copy; 2026 Dott.ssa Arianna Badiali. Tutti i diritti riservati.
         </div>
     </footer>
 
-    <script>
-        lucide.createIcons();
-    </script>
+    <script>lucide.createIcons();</script>
 </body>
 </html>
