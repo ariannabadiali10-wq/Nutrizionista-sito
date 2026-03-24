@@ -10,9 +10,6 @@
         body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
         .bg-crimson { background-color: #8b1a1a; }
         .text-crimson { color: #8b1a1a; }
-        /* Stile per icone social fatte a mano (senza caricamenti esterni) */
-        .icon-fb::before { content: 'f'; font-family: sans-serif; font-weight: bold; text-transform: lowercase; }
-        .icon-ig::before { content: '📸'; font-style: normal; }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800">
@@ -20,14 +17,18 @@
     <nav class="sticky top-0 z-50 bg-white shadow-md border-b border-rose-100">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center gap-3">
-                <img src="logo.jpg" alt="" class="h-10 w-auto" onerror="this.style.display='none'">
+                <img src="logo.jpg" alt="Logo" class="h-10 w-auto" onerror="this.style.display='none'">
                 <h1 class="text-xl font-extrabold text-slate-900 tracking-tight uppercase italic">Dott.ssa <span class="font-light text-crimson">Arianna Badiali</span></h1>
             </div>
             
             <div class="hidden md:flex space-x-6 items-center font-bold text-sm italic">
                 <a href="#prezzi" class="hover:text-crimson transition">Listino</a>
-                <a href="https://www.facebook.com/ariannabadialinutrizionista" target="_blank" class="text-blue-600 font-black text-xl hover:scale-110 transition px-2">f</a>
-                <a href="https://www.instagram.com/ariannabadiali_nutrizionista/" target="_blank" class="text-pink-600 font-black text-xl hover:scale-110 transition px-2">ig</a>
+                <a href="https://www.facebook.com/ariannabadialinutrizionista" target="_blank" class="hover:opacity-75 transition">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg" class="w-6 h-6" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/ariannabadiali_nutrizionista/" target="_blank" class="hover:opacity-75 transition">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" class="w-6 h-6" alt="Instagram">
+                </a>
                 <a href="https://wa.me/393495854951" class="bg-crimson text-white px-6 py-2 rounded-full shadow-lg uppercase text-xs tracking-widest">Contattami</a>
             </div>
         </div>
@@ -39,21 +40,21 @@
                 <h2 class="text-4xl md:text-6xl font-extrabold text-slate-900 leading-tight italic mb-6">
                     Nutrire il corpo è un <span class="text-crimson">gesto d'amore</span>.
                 </h2>
-                <p class="text-lg text-slate-600 mb-8 max-w-lg mx-auto md:mx-0">
+                <p class="text-lg text-slate-600 mb-8 max-w-lg mx-auto md:mx-0 font-medium">
                     Senza proibizioni, con consapevolezza. Un percorso su misura a Jesi e Online.
                 </p>
-                <a href="https://wa.me/393495854951" class="bg-crimson text-white px-10 py-4 rounded-xl font-bold shadow-xl inline-block uppercase text-sm">Inizia Ora</a>
+                <a href="https://wa.me/393495854951" class="bg-crimson text-white px-10 py-4 rounded-xl font-bold shadow-xl inline-block uppercase text-sm tracking-widest">Inizia Ora</a>
             </div>
             <div class="md:w-1/2 flex justify-center">
-                <img src="arianna.jpg" alt="Dott.ssa Arianna Badiali" class="w-80 h-80 md:w-[400px] md:h-[400px] object-cover rounded-3xl shadow-2xl border-8 border-white" onerror="this.src='https://via.placeholder.com/400x400?text=Arianna+Badiali'">
+                <img src="arianna.jpg" alt="Dott.ssa Arianna Badiali" class="w-80 h-80 md:w-[400px] md:h-[400px] object-cover rounded-3xl shadow-2xl border-8 border-white" onerror="this.src='https://via.placeholder.com/400x400?text=Dott.ssa+Arianna+Badiali'">
             </div>
         </div>
     </header>
 
     <section id="prezzi" class="py-20 bg-slate-100">
         <div class="container mx-auto px-6 text-center">
-            <h3 class="text-3xl font-bold mb-12 italic text-crimson uppercase tracking-widest">Listino e Pacchetti</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <h3 class="text-3xl font-bold mb-12 italic text-crimson uppercase tracking-widest border-b-2 border-crimson inline-block pb-2">Listino e Pacchetti</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
                 <div class="bg-white p-6 rounded-2xl shadow">
                     <h5 class="font-bold italic mb-2">Prima Visita</h5>
                     <p class="text-3xl font-black text-crimson mb-2">€100</p>
@@ -72,27 +73,33 @@
                 <div class="bg-white p-6 rounded-2xl shadow border-2 border-crimson/30">
                     <h5 class="font-bold italic mb-2 text-crimson">Pacchetto Controlli</h5>
                     <p class="text-3xl font-black text-crimson mb-2">€150</p>
-                    <p class="text-xs text-slate-400 italic font-bold text-crimson">4 Controlli (Soluzione Unica)</p>
+                    <p class="text-xs text-slate-400 italic font-bold">4 Controlli (Unica Soluzione)</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-slate-900 text-white py-12 px-6">
+    <footer class="bg-slate-900 text-white py-16 px-6">
         <div class="container mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left">
-            <div class="mb-8 md:mb-0">
-                <h4 class="text-xl font-bold italic uppercase mb-2">Dott.ssa Arianna Badiali</h4>
-                <p class="text-slate-400 text-sm">Biologa Nutrizionista - Jesi (AN)</p>
+            <div class="mb-10 md:mb-0">
+                <h4 class="text-2xl font-extrabold italic uppercase mb-2 tracking-tighter text-rose-50">Dott.ssa Arianna Badiali</h4>
+                <p class="text-slate-400 text-sm italic">Biologa Nutrizionista - Jesi (AN)</p>
                 <p class="text-slate-500 text-xs mt-1">P.IVA 02864320425 | Albo n. 4019</p>
-                <div class="flex gap-4 mt-6 justify-center md:justify-start">
-                    <a href="https://www.facebook.com/ariannabadialinutrizionista" target="_blank" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center font-bold text-blue-400 hover:bg-blue-600 hover:text-white transition italic">f</a>
-                    <a href="https://www.instagram.com/ariannabadiali_nutrizionista/" target="_blank" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center font-bold text-pink-400 hover:bg-pink-600 hover:text-white transition italic">ig</a>
+                
+                <div class="flex gap-6 mt-8 justify-center md:justify-start">
+                    <a href="https://www.facebook.com/ariannabadialinutrizionista" target="_blank" class="hover:scale-110 transition">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg" class="w-10 h-10" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/ariannabadiali_nutrizionista/" target="_blank" class="hover:scale-110 transition">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" class="w-10 h-10" alt="Instagram">
+                    </a>
                 </div>
             </div>
+            
             <div class="md:text-right italic">
-                <p class="text-slate-200 text-xl font-bold mb-1">WhatsApp: 349 585 4951</p>
-                <p class="text-slate-400 text-sm mb-6 uppercase tracking-widest">Ricevo su appuntamento</p>
-                <a href="https://wa.me/393495854951" class="bg-crimson px-8 py-3 rounded-full font-bold text-xs uppercase tracking-widest">Prenota Visita</a>
+                <p class="text-slate-200 text-2xl font-bold mb-1 tracking-tight">WhatsApp: 349 585 4951</p>
+                <p class="text-slate-400 text-sm mb-8 uppercase tracking-widest font-bold">Ricevo su appuntamento</p>
+                <a href="https://wa.me/393495854951" class="bg-crimson px-10 py-4 rounded-xl font-bold text-xs uppercase tracking-widest shadow-lg">Prenota Ora</a>
             </div>
         </div>
     </footer>
